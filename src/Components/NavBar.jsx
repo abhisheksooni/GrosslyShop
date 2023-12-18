@@ -34,14 +34,14 @@ function NavBar() {
         <div className=" w-[1.5px] h-6 bg-greyColor"></div>
         <input type="text" placeholder="Search for items..." className="text-greyColor font-medium pl-2 focus:outline-none" />
         </div>
-        <button className=" bg-greenColor text-fff p-2 rounded-full hover:bg-greyColor">
+        <button className="transition ease-in-out duration-400 bg-greenColor text-fff p-2 rounded-full hover:bg-greyColor">
           <img src={sicon} alt="" />
         </button>
       </div>
 
       <div className=" hidden items-center gap-6 md:flex">
       {/* like component */}
-      <button className=" flex items-center gap-2 px-2 py-1  hover:text-greyColor  ">
+      <button className=" transition ease-in-out duration-400 flex items-center gap-2 px-2 py-1  hover:text-greyColor  ">
       <div className="w-7 h-[30px] relative">
   <div className="w-6 h-6 left-0 top-[6px] absolute" />
   <div className="w-[17px] h-[17px] left-[15px] top-0 absolute bg-emerald-400 rounded-full border-[1px] border-fff bg-greenColor" />
@@ -54,7 +54,7 @@ function NavBar() {
       </button>
 
       {/* My Cart */}
-      <button className=" flex items-center gap-2 ">
+      <button className=" transition ease-in-out duration-400 flex items-center gap-2 hover:text-greyColor ">
       <div className="w-7 h-[30px] relative">
   <div className="w-6 h-6 left-0 top-[6px] absolute" />
   <div className="w-[17px] h-[17px] left-[15px] top-0 absolute bg-emerald-400 rounded-full border-[1px] border-fff bg-greenColor" />
@@ -72,7 +72,7 @@ function NavBar() {
       </div>
      
      {/* menu button */}
-     <button className=" text-2xl bg-greenColor p-2 rounded-full text-fff md:hidden">
+     <button className="  text-2xl bg-greenColor p-2 rounded-full text-fff md:hidden">
       <IoMenu />
      </button>
     </nav>
