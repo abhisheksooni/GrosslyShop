@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 body{
     /* font-family: 'Just Another Hand', cursive; */
 font-family: 'Quicksand', sans-serif;
 }
 
-/*
-GR - #3BB77E
-BLA - #253D4E
-GRE - #ADADAD
-*/
+
+.bg-img{
+background-image: url(./Components/Imgs/Rectangle1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    
+}

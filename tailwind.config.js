@@ -20,6 +20,9 @@ export default {
 'backColor':'#C5EAD9',
 'itemBack':'#F2FCE4',
 'itemHover':'#DEF9EC',
+'addbtnbg':'#FFD480',
+'addbg':'#FFF5E1',
+'addbg2':'#D2EFE1',
     },
    
   plugins: [

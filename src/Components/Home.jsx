@@ -1,13 +1,14 @@
 import React from 'react'
 import heroimg from './Imgs/Hreo-img.png'
 import { BsSend } from "react-icons/bs";
+import '../App.css'
 
 function Home() {
   return (
 
-<div className=' bg-backColor lg:m-2'>
+<div className=' bg-img lg:m-2 rounded-md'>
     {/* text */}
-    <div className="lg:max-w-[1567px] md:min-h-[335px] lg:h-auto  lg:justify-between flex flex-col lg:flex-row py-5 lg:p-0   rounded-md bg-main bg-opacity-25  bg-cover">
+    <div className="lg:max-w-[1567px] md:min-h-[335px] lg:h-auto lg:justify-between flex flex-col lg:flex-row py-5 lg:p-0  bg-backColor bg-opacity-80">
     <div className=" text-center flex flex-col lg:ml-10 lg:my-auto lg:text-left">
 <h2 className='text-6xl font-bold lg:w-[40rem] mb-7'>Don’t miss our daily amazing deals.</h2>
 <p className='font-medium text-greyColor mb-12'>Save up to 60% off on your first order</p>

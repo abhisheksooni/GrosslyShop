@@ -9,7 +9,7 @@ function NavBar() {
 
 
     let like = 5;
-    let cart = 4;
+    let cart = 0;
  let cartPrise = 3578
   return (
     <nav className=" flex items-center justify-between w-[95vw] p-5 2xl:max-w-screen-2xl">
@@ -39,9 +39,9 @@ function NavBar() {
         </button>
       </div>
 
-      <div className=" hidden items-center gap-6 md:flex">
+      <div className=" items-center gap-6 md:flex">
       {/* like component */}
-      <button className=" transition ease-in-out duration-400 flex items-center gap-2 px-2 py-1  hover:text-greyColor  ">
+      {/* <button className=" transition ease-in-out duration-400 flex items-center gap-2 px-2 py-1  hover:text-greyColor  ">
       <div className="w-7 h-[30px] relative">
   <div className="w-6 h-6 left-0 top-[6px] absolute" />
   <div className="w-[17px] h-[17px] left-[15px] top-0 absolute bg-emerald-400 rounded-full border-[1px] border-fff bg-greenColor" />
@@ -51,7 +51,7 @@ function NavBar() {
     </div>
 </div>
 <span className="font-medium">Wishlist</span>
-      </button>
+      </button> */}
 
       {/* My Cart */}
       <button className=" transition ease-in-out duration-400 flex items-center gap-2 hover:text-greyColor ">
@@ -63,18 +63,17 @@ function NavBar() {
     <PiShoppingCartSimple /> 
     </div>
 </div>
-
 <div className=" flex flex-col">
-<span className="font-medium">My Cart</span>
-<span className="font-semibold text-[15px] text-greenColor leading-none">Rs.{cartPrise}</span>
+<span className="font-medium hidden lg:flex">My Cart</span>
+<span className="font-semibold text-[15px] text-greenColor leading-none">{/*Rs.{cartPrise}*/}</span>
 </div>
       </button>
       </div>
      
      {/* menu button */}
-     <button className="  text-2xl bg-greenColor p-2 rounded-full text-fff md:hidden">
+     {/* <button className="  text-2xl bg-greenColor p-2 rounded-full text-fff md:hidden">
       <IoMenu />
-     </button>
+     </button> */}
     </nav>
   );
 }

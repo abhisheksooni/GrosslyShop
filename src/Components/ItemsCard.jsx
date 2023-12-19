@@ -26,7 +26,7 @@ function ItemsCard({ItemName="Added", Price=35, img=pi}) {
         {/* Prices */}
         <div className="flex justify-between items-center my-2">
         <p className='text-greenColor tex font-semibold'>Rs. {Price}</p>
-        <button className='flex items-center font-semibold text-greenColor bg-lightGreen p-1 px-2 rounded-md gap-1'> <TbShoppingCart/>  Add</button>
+        <button className='flex items-center font-semibold text-greenColor bg-lightGreen p-1 px-2 rounded-md gap-1 hover:bg-greenColor hover:text-fff'> <TbShoppingCart/>  Add</button>
         </div>
         </div>
         </div>
