@@ -6,7 +6,7 @@ import '../App.css'
 function Home() {
   return (
 
-<div className=' bg-img lg:m-2 rounded-md'>
+<div className=' bg-img lg:m-2 rounded-md relative'>
     {/* text */}
     <div className="lg:max-w-[1567px] md:min-h-[335px] lg:h-auto lg:justify-between flex flex-col lg:flex-row py-5 lg:p-0  bg-backColor bg-opacity-80">
     <div className=" text-center flex flex-col lg:ml-10 lg:my-auto lg:text-left">
