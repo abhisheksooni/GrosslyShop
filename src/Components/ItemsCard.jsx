@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import pi from './Imgs/image 7.png'
 import { TbShoppingCart } from "react-icons/tb";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -13,6 +14,11 @@ function ItemsCard({ItemName="Added", Price=35, img=pi}) {
   return (
     
     <>
+    <NavLink
+    to={"ShowItemCard"}
+    >
+
+    
     <div className="min-w-[153px]  bg-itemBack rounded-xl snap-normal snap-center hover:bg-itemHover transition ease-in-out duration-400 hover:scale-105">
     <div className=' flex flex-col items-center '>
         <img src={img} alt="Items" />
@@ -30,6 +36,7 @@ function ItemsCard({ItemName="Added", Price=35, img=pi}) {
         </div>
         </div>
         </div>
+        </NavLink>
     </>
   )
 }

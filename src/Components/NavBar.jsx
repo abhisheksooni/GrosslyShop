@@ -8,6 +8,7 @@ import AddCart from "./AddCart/AddCart";
 import { RxCross2 } from "react-icons/rx";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaArrowRight } from "react-icons/fa6";
+import { NavLink, Link } from 'react-router-dom';
 // import AddCart from './Components/AddCart/AddCart'
 
 function NavBar(props) {
@@ -15,35 +16,18 @@ function NavBar(props) {
     let like = 5;
     let cart = 0;
  let cartPrise = 3578
-
+ 
  let [a ,seta]=useState("inline")
 
-//  let a = "inline"
- function onClick(){
-  // a = "hidden"
- if(a==="inline"){
-//  a = "hidden"
-console.log(seta("hidden"));
- }
- else{
-  // a = "inline"
-  console.log(seta("inline"));
- }
-  // console.log(a===?"a":"hidden");
-  // console.log();
-
-  
-// console.log(a === "ok" ? "no" : "ok");
-  }
-
-  console.log(a);
-
-
   return (
+    <>
+    
     <nav className=" flex items-center justify-between w-[95vw] p-5 2xl:max-w-screen-2xl relative">
       {/* logo */}
-      <div className=" flex gap-2">
-        <img
+      
+    <NavLink to={"/"} >
+        <div className="flex gap-2">     
+       <img
           src={Logoimg}
           alt="Logo"
           style={{ writh: "49px", height: "49px" }}
@@ -55,7 +39,9 @@ console.log(seta("hidden"));
           <p className=" text-greyColor text-sm leading-none">WABSITE</p>
         </div>
       </div>
-
+      </NavLink>
+      
+     
       {/* Search */}
       <div className=" hidden items-center gap-2 md:flex">
         <div className=" flex items-center gap-1">
@@ -65,7 +51,8 @@ console.log(seta("hidden"));
         <button className="transition ease-in-out duration-400 bg-greenColor text-fff p-2 rounded-full hover:bg-greyColor">
           <img src={sicon} alt="" />
         </button>
-      </div>
+        </div>
+        
 
 {/* My Cart */}
       <div className=" items-center gap-6 md:flex">
@@ -82,9 +69,8 @@ console.log(seta("hidden"));
 <span className="font-medium">Wishlist</span>
       </button> */}
       
-
+      <NavLink  to={"/cart"} >  
       <button
-      onClick={onClick}
       className=" transition ease-in-out duration-400 flex items-center gap-2 hover:text-greyColor ">
       <div className="w-7 h-[30px] relative">
   <div className="w-6 h-6 left-0 top-[6px] absolute" />
@@ -96,9 +82,11 @@ console.log(seta("hidden"));
 </div>
 <div className=" flex flex-col">
 <span className="font-medium hidden lg:flex">My Cart</span>
-<span className="font-semibold text-[15px] text-greenColor leading-none">{/*Rs.{cartPrise}*/}</span>
+<span className="font-semibold text-[15px] text-greenColor leading-none"></span>
 </div>
       </button>
+      </NavLink> 
+      
       </div>    
      {/* menu button */}
      {/* <button className="  text-2xl bg-greenColor p-2 rounded-full text-fff md:hidden">
@@ -107,7 +95,7 @@ console.log(seta("hidden"));
 
     {/* <AddCart Addbtn={a}/> */}
 
-    <div className={` ${a} flex items-center flex-col  w-80 px-4 p-4  rounded-xl bg-fff fixed lg:absolute z-10 top-[12vh] lg:top-[8vh] lg:right-0`}>
+    <div className={` hidden flex items-center flex-col  w-80 px-4 p-4  rounded-xl bg-fff fixed lg:absolute z-10 top-[12vh] lg:top-[8vh] lg:right-0`}>
       <div className=" flex  justify-between w-full px-2 py-1.5 text-blackColor font-bold">
         <span>Shopping Cart</span>
         <button className='text-blackColor font-extrabold text-2xl hover:text-greyColor'><RxCross2 /></button>
@@ -141,7 +129,7 @@ console.log(seta("hidden"));
       </div>
     </div>
     </nav>
-
+    </>
   );
 }
 

@@ -7,6 +7,7 @@ import Items_Cantener from './Components/Items_Cantener'
 import OfferCantener from './Offer Card/OfferCantener'
 import Footer from './Components/Footer'
 import AddCart from './Components/AddCart/AddCart'
+import ShowItemCard from './Components/ShowItamsCard/ShowItemCard'
 
 
 function App() {
@@ -15,16 +16,17 @@ function App() {
   return (
    <>
    <div className=" flex justify-center flex-col items-center ">
-<NavBar/>
-    <Home/>
+{/* <NavBar/> */}
+    {/* <Home/> */}
    <div className="m-5 lg:"></div>
     <Categories_Cantener/>
     <Items_Cantener/>
     <OfferCantener/>
-    <AddCart/>
+    {/* <AddCart/> */}
+    {/* <ShowItemCard/> */}
     </div>
 
-    <Footer/>
+    {/* <Footer/> */}
    </>
   )
 }

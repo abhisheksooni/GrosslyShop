@@ -3,6 +3,8 @@ import heroimg from './Imgs/Hreo-img.png'
 import { BsSend } from "react-icons/bs";
 import '../App.css'
 
+import { NavLink, Link } from 'react-router-dom';
+
 function Home() {
   return (
 
