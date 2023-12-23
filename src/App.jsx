@@ -9,9 +9,13 @@ import Footer from './Components/Footer'
 import AddCart from './Components/AddCart/AddCart'
 import ShowItemCard from './Components/ShowItamsCard/ShowItemCard'
 
+import itams from './Items'
+
 
 function App() {
   const [count, setCount] = useState(0)
+
+  // console.log(<items/>);
 
   return (
    <>
@@ -24,6 +28,8 @@ function App() {
     <OfferCantener/>
     {/* <AddCart/> */}
     {/* <ShowItemCard/> */}
+
+
     </div>
 
     {/* <Footer/> */}
